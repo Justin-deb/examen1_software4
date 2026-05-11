@@ -1,4 +1,4 @@
-import type { Source } from "./Source";
+import type { Source } from "./Source.ts";
 
 export interface New {
   source: Source;

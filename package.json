@@ -1,0 +1,27 @@
+{
+  "name": "examen1_software4",
+  "version": "1.0.0",
+  "description": "Mairon Barquero Salazar C4D016\r Justin Estrada Cruz C4E977\r Fabian Alfaro Sandi C4C253",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Justin-deb/examen1_software4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Justin-deb/examen1_software4/issues"
+  },
+  "homepage": "https://github.com/Justin-deb/examen1_software4#readme",
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vite": "^8.0.12"
+  }
+}
