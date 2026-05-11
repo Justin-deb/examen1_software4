@@ -1,4 +1,4 @@
-import type { ServerResponse } from "../types/ServerResponse";
+import type { ServerResponse } from "../../types/ServerResponse";
 
 const API_KEY = '1d3f8e372d1748d6a56ebd76fb6588bc';
 const API_URL = 'https://newsapi.org/v2/';
