@@ -1,166 +1,124 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Examen I</title>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Examen I</title>
+        <link
+            rel="stylesheet"
+            href="../css/styles.css"
+        />
+    </head>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-
-  <body class="min-h-screen flex flex-col bg-gray-100">
-
-    <header
-      class="w-full bg-[#020f2b] shadow-xl px-4 sm:px-6 md:px-10 py-4 flex items-center justify-between relative"
-    >
-      <h1
-        class="text-white text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-wide"
-      >
-        Noticias
-      </h1>
-
-      <div class="relative group">
-        <button
-          class="flex flex-col justify-center items-center gap-1 w-10 h-10 sm:w-12 sm:h-12 rounded-lg hover:bg-white/10 transition"
-        >
-          <span class="w-6 sm:w-7 h-[3px] bg-white rounded-full"></span>
-          <span class="w-6 sm:w-7 h-[3px] bg-white rounded-full"></span>
-          <span class="w-6 sm:w-7 h-[3px] bg-white rounded-full"></span>
-        </button>
-
-        <div
-          class="absolute right-0 mt-3 w-44 sm:w-52 bg-[#071937] border border-white/10 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden z-50"
-        >
-          <a
-            href="#grid"
-            class="block px-4 sm:px-6 py-3 sm:py-4 text-sm sm:text-base text-white hover:bg-cyan-500/20 transition font-medium"
-          >
-            Grid
-          </a>
-
-          <a
-            href="#flexbox"
-            class="block px-4 sm:px-6 py-3 sm:py-4 text-sm sm:text-base text-white hover:bg-cyan-500/20 transition font-medium"
-          >
-            Flexbox
-          </a>
-
-          <a
-            href="#libre"
-            class="block px-4 sm:px-6 py-3 sm:py-4 text-sm sm:text-base text-white hover:bg-cyan-500/20 transition font-medium"
-          >
-            Libre
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <main class="flex-1 flex flex-col">
-
-      <section id="grid" class="flex-1 p-10">
-      </section>
-
-      <section id="flexbox" class="flex-1 p-10">
-      </section>
-
-      <section id="libre" class="flex-1 p-10">
-      </section>
-
-    <body class="min-h-screen flex flex-col bg-gray-100">
-
-      <main class="flex flex-1">
-        <div class="grid grid-cols-2">
-          <div>sdsad</div>
-          <div class=" mt-auto flex-1 mb-10 py-5 mx-5 px-5 flex flex-col border border-black rounded-lg">
-            <h2 class="text-2xl font-bold text-center mb-6">Formulario de contacto</h2>
-            <h4 class="text-lg text-center pb-3">Obten las ultimas noticias en tu bandeja de correo</h4>
-  
-            <form class="space-y-4">
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">
-                  Nombre
-                </label>
-  
+    <body>
+        <header>
+            <div class="logo">NOTICIAS</div>
+            <nav class="nav-container">
                 <input
-                  type="text"
-                  name="nombre"
-                  placeholder="Ingresa tu nombre"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
+                    type="checkbox"
+                    id="menu-toggle"
+                    class="menu-checkbox"
                 />
-              </div>
-  
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">
-                  Email
+                <label
+                    for="menu-toggle"
+                    class="menu-button"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </label>
-  
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Ingresa tu email"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
-                />
-              </div>
-  
-              <button
-                type="submit"
-                class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
-              >
-                Enviar
-              </button>
-            </form>
-          </div>
-        </div>
+                <ul class="nav-menu">
+                    <li><a href="#news-container">Inicio</a></li>
+                    <li><a href="#">Nacionales</a></li>
+                    <li><a href="#">Deportes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
-      </main>
+        <main id="news-container">
+            <section id="news"><h1>Noticias actuales:</h1></section>
 
-      <footer
-        class="w-full bg-[#020f2b] border-t border-white/10 py-6 px-10 flex flex-col items-center gap-5"
-      >
-        <div class="flex items-center gap-8">
-          <a href="https://www.facebook.com" target="_blank">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-              alt="Facebook"
-              class="w-8 hover:scale-110 transition duration-300"
-            />
-          </a>
+            <aside>
+                <div id="aside-form">
+                    <h3>Regístrate</h3>
+                    <p>Mira estas y muchas otras noticias en Noticias.com con una cuenta gratuita</p>
+                    <form>
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <input
+                                type="text"
+                                placeholder="Tu nombre"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input
+                                type="email"
+                                placeholder="tu@correo.com"
+                            />
+                        </div>
+                        <button type="submit">Registrarme</button>
+                    </form>
+                </div>
+            </aside>
+        </main>
 
-        <a href="https://www.instagram.com" target="_blank">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-            alt="Instagram"
-            class="w-7 sm:w-8 hover:scale-110 transition duration-300"
-          />
-        </a>
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>¿Quieres estar al día?</h2>
+                <p>Suscríbete ahora para recibir un boletín semanal con lo más importante.</p>
+                <form class="cta-form">
+                    <input
+                        type="email"
+                        placeholder="Introduce tu correo electrónico"
+                    />
+                    <button type="submit">Suscribirme</button>
+                </form>
+            </div>
+        </section>
 
-        <a href="https://www.twitter.com" target="_blank">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
-            alt="Twitter"
-            class="w-7 sm:w-8 hover:scale-110 transition duration-300"
-          />
-        </a>
+        <footer>
+            <div class="social-icons">
+                <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    ><img
+                        src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                        alt="Facebook"
+                /></a>
+                <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    ><img
+                        src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                        alt="Instagram"
+                /></a>
+                <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    ><img
+                        src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+                        alt="Twitter"
+                /></a>
+                <a
+                    href="https://www.youtube.com"
+                    target="_blank"
+                    ><img
+                        src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                        alt="YouTube"
+                /></a>
+            </div>
+            <div class="footer-line"></div>
+            <p>© 2026 Noticias. Todos los derechos reservados.</p>
+        </footer>
 
-        <a href="https://www.youtube.com" target="_blank">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
-            alt="YouTube"
-            class="w-7 sm:w-8 hover:scale-110 transition duration-300"
-          />
-        </a>
-
-      </div>
-
-      <div class="w-full max-w-4xl h-px bg-white/10"></div>
-
-      <p class="text-gray-400 text-xs sm:text-sm text-center px-2">
-        © 2026 Noticias. Todos los derechos reservados.
-      </p>
-
-    </footer>
-
-  </body>
+        <script
+            type="module"
+            src="../js/main.js"
+        ></script>
+    </body>
 </html>

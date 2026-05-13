@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "repository": {
@@ -15,13 +15,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/Justin-deb/examen1_software4/issues"
   },
   "homepage": "https://github.com/Justin-deb/examen1_software4#readme",
   "devDependencies": {
-    "typescript": "^6.0.3",
     "vite": "^8.0.12"
   }
 }
