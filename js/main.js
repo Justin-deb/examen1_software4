@@ -1,4 +1,4 @@
-const API_KEY = "1d3f8e372d1748d6a56ebd76fb6588bc";
+const API_KEY = "da6c9c38bcf548529c01e38148a7f895";
 const API_URL = "https://newsapi.org/v2/";
 
 const getLatestNews = async () => {
