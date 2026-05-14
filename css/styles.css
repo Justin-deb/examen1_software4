@@ -256,7 +256,7 @@ input:focus {
     background-color: #1d4ed8;
 }
 
-.cta-section {
+#cta-section {
     background-color: #e5e7eb;
     padding: 4rem 2.5rem;
     text-align: center;
